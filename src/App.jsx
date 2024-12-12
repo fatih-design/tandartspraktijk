@@ -17,6 +17,7 @@ function App() {
             <Whitening path="/whitening" element={<Whitening />}/>
             <Appointments path="/appointments" element={<Appointments />} />
             <Cavities path="/cavities" element={<Cavities />} />
+            <NotFound path="*" element={<NotFound />} />
             </Routes>
         </>
     );
