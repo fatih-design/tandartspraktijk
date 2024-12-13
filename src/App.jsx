@@ -14,10 +14,10 @@ function App() {
             <Navigation />
             <Routes>
             <Route path="/" element={<Home />}/>
-            <Whitening path="/whitening" element={<Whitening />}/>
-            <Appointments path="/appointments" element={<Appointments />} />
-            <Cavities path="/cavities" element={<Cavities />} />
-            <NotFound path="*" element={<NotFound />} />
+            <Route path="/whitening" element={<Whitening />}/>
+            <Route path="/appointments" element={<Appointments />} />
+            <Route path="/cavities" element={<Cavities />} />
+            <Route path="*" element={<NotFound />} />
             </Routes>
         </>
     );

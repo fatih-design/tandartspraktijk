@@ -14,22 +14,28 @@ function Navigation() {
                             Home
                         </NavLink>
                     </li>
+
+
+                    <li>
+                        <NavLink to='/appointments'
+                                 className={({isActive}) => isActive === true ? 'active-link' : 'default-link'}>
+                            Afspraak maken
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/whitening'
+                                 className={({isActive}) => isActive === true ? 'active-link' : 'default-link'}>
+                            Tanden bleken
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink to='/cavities'
                                  className={({isActive}) => isActive === true ? 'active-link' : 'default-link'}>
                             Gaatjes
-                        </NavLink></li>
-                    <li>
-                        <NavLink to='/appointments'
-                                 className={({isActive}) => isActive === true? 'active-link' : 'default-link'}>
-                            Afspraak maken
                         </NavLink>
                     </li>
-                    <li><NavLink to='/whitening'
-                                 className={({isActive}) => isActive === true ? 'active-link' : 'default-link'}>
-                        Tanden bleken
-                    </NavLink>
-                    </li>
+
+
                 </ul>
             </div>
         </nav>
